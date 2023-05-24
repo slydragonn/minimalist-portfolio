@@ -1,0 +1,37 @@
+---
+const {message, icon, link} = Astro.props
+---
+
+<a class="link-btn" href={link}><button class="btn"><span>{message}</span><img src={icon} alt='button icon'/></button></a>
+
+<style>
+    .link-btn {
+        text-decoration: none;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 150px;
+        height: 45px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        border: none;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    .btn > span {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .btn > img {
+        width: 24px;
+    }
+    
+    .btn:hover {
+        transform: translateY(-10px);
+    }
+</style>

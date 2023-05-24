@@ -1,0 +1,50 @@
+---
+const {title, description, link} = Astro.props
+---
+
+<article class="project-card">
+    <h3>{title}</h3>
+    <div>
+        <a href={link} target="_blank">
+            <p>{description}</p>
+        </a>
+    </div>
+</article>
+
+<style>
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 260px;
+        height: 210px;
+        padding: 20px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        color: #fff;
+    }
+    
+    .project-card > h3 {
+        width: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .project-card > div {
+        border-top: 1px solid #fff;
+    }
+
+    .project-card > div > a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 100;
+        font-size: 14px;
+        transition: all .3s;
+    }
+
+    .project-card > div > a:hover {
+        color: orange;
+    }
+</style>

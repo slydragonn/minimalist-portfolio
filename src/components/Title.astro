@@ -1,0 +1,24 @@
+---
+const { text } = Astro.props
+---
+
+<h2>
+    {text}
+</h2>
+
+<style>
+    h2 {
+        max-width: 450px;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin: 0;
+        color: #1e1e1e;
+        text-align: center;
+        font-weight: 500;
+        background: linear-gradient(89.56deg, #1E1E1E 44.7%, rgba(30, 30, 30, 0) 137.42%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+</style>
