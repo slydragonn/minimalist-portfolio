@@ -20,8 +20,10 @@ const {title, description, link} = Astro.props
         height: 210px;
         padding: 20px;
         background-color: #1e1e1e;
-        border-radius: 10px;
+        background: linear-gradient(160deg, rgb(59, 59, 59) 10%, rgba(30,30,30,1) 100%);
+        border-radius: 20px;
         color: #fff;
+        box-shadow: 0 5px 10px rgb(0, 0, 0, .5);
     }
     
     .project-card > h3 {
@@ -38,8 +40,8 @@ const {title, description, link} = Astro.props
 
     .project-card > div > a {
         text-decoration: none;
-        color: #fff;
-        font-weight: 100;
+        color: #d1d1d1;
+        font-weight: 300;
         font-size: 14px;
         transition: all .3s;
     }

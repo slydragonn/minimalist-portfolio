@@ -16,16 +16,18 @@ const {message, icon, link} = Astro.props
         width: 150px;
         height: 45px;
         background-color: #1e1e1e;
-        border-radius: 10px;
+        background: linear-gradient(160deg, rgb(59, 59, 59) 10%, rgba(30,30,30,1) 100%);
+        border-radius: 20px;
         border: none;
         transition: all .3s;
         cursor: pointer;
+        box-shadow: 0 5px 10px rgb(0, 0, 0, .5);
     }
     .btn > span {
         color: #fff;
         text-decoration: none;
-        font-size: 14px;
-        font-weight: 400;
+        font-size: 12px;
+        font-weight: 600;
     }
     .btn > img {
         width: 24px;
